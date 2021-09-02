@@ -24,7 +24,6 @@ jobs:
           files: '["www/index.html"]'
         env:
           CAL_URI: ${{ secrets.CAL_URI }}
-          SETUPS_URI: ${{ secrets.SETUPS_URI }}
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
