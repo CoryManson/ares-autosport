@@ -1088,7 +1088,7 @@ a.btn-mod:focus{
     overflow: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center center !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
