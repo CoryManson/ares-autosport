@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="ares-autosport-syncthing-setup">Ares Autosport Syncthing Setup</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><a href="https://github.com/canton7/SyncTrayzor/releases">SynzTrayzor</a></li>
+<li>Cory, AP or Scott Server Device Id (Ask a team member for this)</li>
+</ul>
+<h2 id="setup">Setup</h2>
+<ol>
+<li>Close iRacing</li>
+<li>Browse to your setups folder, typically this is located in <code>My Documents/iRacing</code></li>
+<li>Rename the setups folder<br>
+<img src="https://i.imgur.com/hVp923J.png"></li>
+<li>Create a new empty setups folder<br>
+<img src="https://i.imgur.com/OvEDNRi.png"></li>
+<li>Install Synctrayzor</li>
+<li>Go to <code>Actions -&gt; Settings</code> and set your device name. The device name should make easy to recognise for others on the team<br>
+<img src="https://i.imgur.com/lqexytF.gif"></li>
+<li>Go to <code>Add Remote Device</code> Add the device id for one of the team servers and mark it as an introducer<br>
+<img src="https://i.imgur.com/Iomh06h.gif"></li>
+<li>Send a message to the team member that owns the server and ask them to accept your connection. The team member will then share the setups folder with you</li>
+<li>Find the prompt for the iRacing Setups share and select <code>Add</code></li>
+<li>In the <code>General</code> tab select browse in <code>Folder Path</code> and browse to your setups folder</li>
+<li>In the <code>File Versioning</code> tab select <code>Simple File Versioning</code> and clean out after 7 days</li>
+<li>Select <code>Save</code><br>
+<img src="https://i.imgur.com/dxGfJGI.gif"></li>
+<li>The teams setups will now sync to you, this may take a short moment</li>
+<li>Select the share and then select <code>Edit</code></li>
+<li>Open the <code>Ignore Patterns</code> tab, active <code>Add ignore patterns</code> and past the following into the text field:</li>
+</ol>
+<pre><code>#include .stglobalignore
+</code></pre>
+<h2 id="post-setup-steps">Post Setup Steps</h2>
+<p>At this point you should have synced the teams setups, your old setups still remain in the folder you renamed in step 3. You may now copy over any setups that you need.</p>
+<p>If you are using per car controls, ensure to copy those config files back to the corresponding car folder. These files are unique to you and do not sync to other team members.</p>
+</div>
+</body>
+
+</html>
